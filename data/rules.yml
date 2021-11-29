@@ -1,0 +1,45 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+
+- rule: Say thanks 
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: ask for assistant video 
+  steps:
+  - intent: assistant_video
+  - action: utter_demo_video
+
+- rule: Say like ASU 
+  steps:
+  - intent: Do_you_like_ASU
+  - action: utter_Do_you_like_ASU
+- rule: Say Happy holiday 
+  steps:
+  - intent: Happy_holiday
+  - action: utter_Happy_holiday
+
+
+
+- rule: Say about reminder 
+  steps:
+  - intent: set_a_reminder_for_me
+  - action: utter_set_a_reminder_for_me
+- rule: Say looking forward to help  
+  steps:
+  - intent: I_am_looking_forward_to_you_helping_me
+  - action: utter_I_am_looking_forward_to_you_helping_me

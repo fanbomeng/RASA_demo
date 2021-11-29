@@ -1,0 +1,183 @@
+version: "2.0"
+nlu:
+- intent: assistant_video
+  examples: |
+    - I'd like to watch some assistant videos
+    - assitant video
+    - demo video of the bot?
+- intent: thanks
+  examples: |
+    - thank you
+    - thanks a lot
+- intent: no_idea
+  examples: |
+    - How does it work?
+    - can you tell me how to use the bot?
+    - are there some demo videos about the bot?
+    - Who are you
+- intent: infor_course_name
+  examples: |
+    - The course is [calculus](course_name)
+    - It is [cal](course_name)
+    - I would like to ask some questions related to [calculus](course_name)
+    - It's [stats](course_name)
+    - questions about [statistics](course_name)
+    - The course is about [Statistics](course_name)?
+- intent: Do_you_like_ASU
+  examples: |
+    - do you like ASU
+    - do you enjoy being a devil
+    - are you happy being a sun devil
+    - do you enjoy working at ASU
+    - Do you like this school
+    - do you like this university
+    - are you happy at this school
+    - are you a fan of asu
+    - Are you a sun devil fan
+    - do you like it here
+    - Do you enjoy it here
+    - Do you love working for asu
+- intent: Happy_holiday
+  examples: |
+    - Alright thank you happy holidays
+    - Aww happy thanksgiving __ to you!
+    - Feliz navidad!!
+    - happy 4th of July
+    - Happy Easter
+    - Happy Fourth!
+    - happy halloween
+    - Happy Holy Days
+    - Happy Hanukkah
+    - Happy new year!
+    - happy spooky season
+    - happy ramadan
+    - happy turkey day
+    - Happy world kindness day!
+    - have a good holiday
+    - Happy Valentine's Day!
+    - Have a great Christmas
+    - Have a very merry Christmas
+    - I wish you a happy holiday!
+    - Merry Christmas
+    - happy holiday
+- intent: set_a_reminder_for_me
+  examples: |
+    - Can you remind me about this in a few days
+    - Can you remind me in a couple days
+    - can you remind me on monday
+    - Can you remind me to apply
+    - can you set a reminder for me
+    - Can you set up reminders
+    - Do you do reminders
+    - Can you wake me up at 7am
+    - please set a reminder
+    - Remind me that I have a paper due at 10am tomorrow
+    - remind me to
+    - set an alarm for me
+    - set a timer
+    - Will you alert me when I have homework due
+    - You didn't remind me
+    - Can I get reminders about if I have enrolled for next semester or not
+    - Can I be reminded of this when it starts
+    - FinAid reminders
+    - Okay can you remind me to register
+- intent: I_am_looking_forward_to_you_helping_me
+  examples: |
+    - I am so excited
+    - I am really looking forward to next semester
+    - I'm so happy to start the fall already
+    - School is starting tomorrow can't wait!
+    - Incredibly happy to be back in school
+    - I am looking forward to it
+    - so so so excited
+    - super happy rn
+    - i am pumped school is starting soon
+    - i'm ready for this semester
+    - i'm ready and so excited
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: asking_calculus_questions
+  examples: |
+    - I am doing great, I have some questions in Calculus
+    - I have question on Calculus

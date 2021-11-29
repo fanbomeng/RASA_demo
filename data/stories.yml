@@ -1,0 +1,71 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_restart
+- story: interactive_story_2
+  steps:
+  - intent: Happy_holiday
+  - action: utter_Happy_holiday
+- story: Story from Conversation ID 0d2adc474b674648afe0549546b36209
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_restart
+- story: ask for help and check
+  steps:
+  - intent: asking_calculus_questions
+  - action: utter_ready_to_help
+- story: ask for help and check
+  steps:
+  - intent: no_idea
+  - action: utter_know_how_to_use
+- story: talk about selected questions
+  steps:
+  - intent: infor_course_name
+  - slot_was_set:
+    - course_name: filled
+  - action: utter_name_of_course
+- story: Story from Conversation ID 0726fdf2573647eda9350d09356db71a
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_restart
+  - intent: Do_you_like_ASU
+  - action: utter_Do_you_like_ASU
+  - intent: Do_you_like_ASU
+  - action: utter_Do_you_like_ASU
+  - intent: Happy_holiday
+  - action: utter_Happy_holiday
+  - intent: Happy_holiday
+  - action: utter_Happy_holiday
+- story: Story from Conversation ID babbc82ede354cbaaea2ebdce7679ae7
+  steps:
+  - intent: greet
+  - action: utter_greet

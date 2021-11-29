@@ -1,0 +1,88 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- no_idea:
+    use_entities: true
+- greet:
+    use_entities: true
+- thanks:
+    use_entities: true
+- Happy_holiday:
+    use_entities: true
+- set_a_reminder_for_me:
+    use_entities: true
+- Do_you_like_ASU:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- asking_calculus_questions:
+    use_entities: true
+- assistant_video:
+    use_entities: true
+- I_am_looking_forward_to_you_helping_me:
+    use_entities: true
+- infor_course_name:
+    use_entities: true
+entities:
+- course_name
+slots:
+  course_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_name_of_course:
+  - text: I am very happy to help you on {course_name}, for this course, I can provide Q&A on videos, exercise and conceptual questions!
+  utter_Happy_holiday:
+  - text: Happy Holidays to you too!
+  utter_thanks:
+  - text: You are welcome!
+  utter_I_am_looking_forward_to_you_helping_me:
+  - text: Cool, me too!
+  utter_set_a_reminder_for_me:
+  - text: Unfortunately, I don't have the power to set personal reminders for you
+  utter_greet:
+  - text: Hey! How are you?
+  utter_Do_you_like_ASU:
+  - text: I work for Arizona State University so I have to say yes. But even if I didn't work for ASU, I'd still be a huge fan. They're so innovative.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_demo_video:
+  - text: OK, here is a demo video "https://www.youtube.com/watch?v=Ap62n_YAVZ8&list=PL75e0qA87dlEjGAc9j9v3a5h1mxI2Z9fi&index=1". Hopefully it is helpful to you!
+  utter_ready_to_help:
+  - text: OK, I am ASU Tutor and I am more than happy to help!
+  utter_know_how_to_use:
+  - buttons:
+    - payload: /mood_great
+      title: Yes
+    - payload: /assistant_video
+      title: No
+    text: Do you know how to use the bot?
+actions:
+- utter_know_how_to_use
+forms: {}
+e2e_actions: []
