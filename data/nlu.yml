@@ -9,6 +9,7 @@ nlu:
   examples: |
     - thank you
     - thanks a lot
+    - how are you
 - intent: no_idea
   examples: |
     - How does it work?
@@ -109,6 +110,7 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - Hi
 - intent: goodbye
   examples: |
     - good afternoon
