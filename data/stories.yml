@@ -1,0 +1,454 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID 4b6cd1f5bafa4f339bd983d207bcdb8d
+  steps:
+  - intent: bot_challenge
+  - action: utter_ASU_bot
+- story: Story from Conversation ID 20703f7176ea4710a3afc2e2099c2b9d
+  steps:
+  - intent: ASU_proctor
+  - action: utter_ASU_protor
+- story: Story from Conversation ID f93dd7ba861e4e12a396383afbd74b35
+  steps:
+  - intent: testing_related
+  - action: utter_tesing_related
+- story: Story from Conversation ID 96e6789f5d1f4ef1b0762ee073360bdf
+  steps:
+  - intent: proctor_and_test
+  - action: utter_proctor_and_test
+- story: Story from Conversation ID bec24e9df39d4b81952ec21d06345183
+  steps:
+  - intent: arrive_time_exam
+  - action: utter_arrive_time_exam
+- story: Story from Conversation ID 8f85c0747a5d426cab43021968969293
+  steps:
+  - intent: get_good_grades
+  - action: utter_get_good_grades
+- story: Story from Conversation ID c3de8f1d73e74857a80081a47131f558
+  steps:
+  - intent: get_tutoring_help
+  - action: utter_get_tutoring_help
+- story: Story from Conversation ID 409f36458e98470c98bb5ccff363bc02
+  steps:
+  - intent: tips_study
+  - action: utter_tips_study
+- story: Story from Conversation ID a8e7a0d08e824dc79f95f0810df1826d
+  steps:
+  - intent: be_success
+  - action: utter_be_success
+- story: Story from Conversation ID 2eae539215fb4685aceeb7df34ccbd01
+  steps:
+  - intent: time_management_tips
+  - action: utter_time_management_tips
+- story: Story from Conversation ID 6b7beb0ca5e24ed28747029a3e2fdbd2
+  steps:
+  - intent: academic_coach
+  - action: utter_academic_coach
+- story: Story from Conversation ID 00824a1dbd4a4be088d3c88af2cf6b1a
+  steps:
+  - intent: academic_support
+  - action: utter_academic_support
+- story: Story from Conversation ID 7ef811a72a78479480943670b639ffe6
+  steps:
+  - intent: academic_skills
+  - action: utter_academic_skills
+- story: Story from Conversation ID 8865c8a6743e495bace6d7e9b31e54dd
+  steps:
+  - intent: demo_eng_proficiency
+  - action: utter_demo_eng_proficiency
+- story: Story from Conversation ID c137306ec0bd4b018d455a643641e80d
+  steps:
+  - intent: prof_not_email_back
+  - action: utter_prof_not_email_back
+- story: Story from Conversation ID 43918bf7f5a2406ea770c44b82116af9
+  steps:
+  - intent: edu_oppor_offered_Office_student_succ
+  - action: utter_edu_oppor_offered_Office_student_succ
+- story: Story from Conversation ID 557d352464a3483dbed6112849258cf2
+  steps:
+  - intent: pass_class
+  - action: utter_pass_class
+- story: Story from Conversation ID 577b127463b94800a9f9433ae2c84e8d
+  steps:
+  - intent: tips_get_organized
+  - action: utter_tips_get_organized
+- story: Story from Conversation ID 94995ef976d641afa254b2f605e064f2
+  steps:
+  - intent: fail_can_not_online_class
+  - action: utter_fail_can_not_online_class
+- story: Story from Conversation ID 883581fb379f43e6ad70f382ace212df
+  steps:
+  - intent: college_sucks
+  - action: utter_college_sucks
+- story: Story from Conversation ID a0f83624be0143c294e1a09c9f634b00
+  steps:
+  - intent: dumb
+  - action: utter_dumb
+- story: Story from Conversation ID 3088c56b74394d5e9253f3645a9fc99c
+  steps:
+  - intent: probation_feel_terrible
+  - action: utter_probation_feel_terrible
+- story: Story from Conversation ID c0c9f759c1e04c37b43327d34c625afd
+  steps:
+  - intent: hate_myself
+  - action: utter_hate_myself
+- story: Story from Conversation ID 28e6459c566f4659a71a1cef29a65a67
+  steps:
+  - intent: no_motivation
+  - action: utter_no_motivation
+- story: Story from Conversation ID 68411e1006024f03bfc4e3c3833fe6ec
+  steps:
+  - intent: Academic_success_program
+  - action: utter_Academic_success_program
+- story: Story from Conversation ID 51825a29646c49d387565286c85b5198
+  steps:
+  - intent: supplemental_insturction_avaiable
+  - action: utter_supplemental_insturction_avaiable
+- story: Story from Conversation ID 1e01f57c8dee47c18a4292852999f2ce
+  steps:
+  - intent: time_management
+  - action: utter_time_management
+- story: Story from Conversation ID d62ad9ecbeb849d0b1cc2f52023d1171
+  steps:
+  - intent: SSC
+  - action: utter_SSC
+- story: Story from Conversation ID 60b7072d4df149dba87272c0ecf7cfa0
+  steps:
+  - intent: contact_tutoring_center
+  - action: utter_contact_tutoring_center
+- story: Story from Conversation ID 6942802e32d64f589291f13ba7c341c4
+  steps:
+  - intent: hours_tutoring_center
+  - action: utter_hours_tutoring_center
+- story: Story from Conversation ID ba8eb18abef247a4bd453c68658731b5
+  steps:
+  - intent: help_writing
+  - action: utter_help_writing
+- story: Story from Conversation ID 7dac35440dd24fb59971720c4a19285f
+  steps:
+  - intent: subject_tutor_center_help
+  - action: utter_subject_tutor_center_help
+- story: Story from Conversation ID 93af30d8037847668220ae6788b46e19
+  steps:
+  - intent: request_tutor
+  - action: utter_request_tutor
+- story: Story from Conversation ID 12131a68bc73443d8011c998dc9ce959
+  steps:
+  - intent: AUS_tutor_stu
+  - action: utter_AUS_tutor_stu
+- story: Story from Conversation ID 138d858c354e4dde833f5b2ac98cfb92
+  steps:
+  - intent: leave_paper_come_back_write_center
+  - action: utter_leave_paper_come_back_write_center
+- story: Story from Conversation ID d619180309d846edbed244989f1f6386
+  steps:
+  - intent: write_center_email_prof
+  - action: utter_write_center_email_prof
+- story: Story from Conversation ID 337acd4f6b574b9fbf700bd66b02c91d
+  steps:
+  - intent: write_center_help_mla_format
+  - action: utter_write_center_help_mla_format
+- story: Story from Conversation ID 65a3ad20bc96401dbdf073958ebceadc
+  steps:
+  - intent: write_center_help
+  - action: utter_write_center_help
+- story: Story from Conversation ID 441569d032f541fb8e96f7621bea2356
+  steps:
+  - intent: do_before_vist_write_center
+  - action: utter_do_before_vist_write_center
+- story: Story from Conversation ID 1c7e81b7a9ab4e2b8ca5acc95857d28a
+  steps:
+  - intent: write_center_hours
+  - action: utter_write_center_hours
+- story: Story from Conversation ID 52421f18f2fe404fb1c1d7192ec04cb4
+  steps:
+  - intent: science_tutoring
+  - action: utter_science_tutoring
+- story: Story from Conversation ID d52609a0771e4437a6742f5868bd4c67
+  steps:
+  - intent: need_help_essay
+  - action: utter_need_help_essay
+- story: Story from Conversation ID 201dbb3fad9f488bb98b1a98370113ae
+  steps:
+  - intent: where_tutoring_center
+  - action: utter_where_tutoring_center
+- story: Story from Conversation ID 0ac8a58234ea499eba2394916f4918a4
+  steps:
+  - intent: get_Mircrosoft_word_package
+  - action: utter_get_Mircrosoft_word_package
+- story: Story from Conversation ID 3318b731af3a4601975d933536a5af14
+  steps:
+  - intent: supplemental_instruction
+  - action: utter_supplemental_instruction
+- story: Story from Conversation ID 7f8d9728ca6b42cca38797b649017cbe
+  steps:
+  - intent: join_supplemental_instruc
+  - action: utter_join_supplemental_instruc
+- story: Story from Conversation ID ca81853d7c4c4447a0b89c0b7aa43d09
+  steps:
+  - intent: where_auxiliary_support_service
+  - action: utter_where_auxiliary_support_service
+- story: Story from Conversation ID a28bda08d18e41f3825eee8b5df50426
+  steps:
+  - intent: where_tutoring_center
+  - action: utter_where_tutoring_center
+- story: Story from Conversation ID 87e4781f011543a0a36d381dbe0ce9fa
+  steps:
+  - intent: like_ASU
+  - action: utter_like_ASU
+- story: Story from Conversation ID 523d175d3d3b4f58b1b0772e853b9502
+  steps:
+  - intent: happy_holiday
+  - action: utter_happy_holiday
+- story: Story from Conversation ID 9699e14d10db4c03aea7cc3270734a38
+  steps:
+  - intent: set_reminder
+  - action: utter_set_reminder
+- story: Story from Conversation ID f8ddee933b49473bbb8c162fafe3ecf1
+  steps:
+  - intent: looking_forward_excite
+  - action: utter_looking_forward_excite
+- story: Story from Conversation ID ed1539d3fed74a07bbfc24bb80fb7251
+  steps:
+  - intent: weather_today
+  - action: utter_weather_today
+- story: Story from Conversation ID b2e6ba244c6a47728ab97e250c088284
+  steps:
+  - intent: ASU_colors
+  - action: utter_ASU_colors
+- story: Story from Conversation ID de642a9193394c179969b5ac4150b47c
+  steps:
+  - intent: go_sparky
+  - action: utter_go_sparky
+- story: Story from Conversation ID 8ac1b9a1fa724f9ba6cd747886daad4f
+  steps:
+  - intent: emoji
+  - action: utter_emoji
+- story: Story from Conversation ID 7fcc3ffb8ce64128829d8206444e7c4d
+  steps:
+  - intent: good_break
+  - action: utter_good_break
+- story: Story from Conversation ID c4a3ec8af0e749d1a842e728c6874930
+  steps:
+  - intent: good_morning
+  - action: utter_good_morning
+- story: Story from Conversation ID a4698d76ce1f4fcbbfd3c58946ab9b43
+  steps:
+  - intent: business_day
+  - action: utter_business_day
+- story: Story from Conversation ID ffabe07d4a5443c2a8b1cc6d3fda9e98
+  steps:
+  - intent: grateful
+  - action: utter_grateful
+- story: Story from Conversation ID 8644fd51c5ee4e709df6022115ad3199
+  steps:
+  - intent: loser
+  - action: utter_loser
+- story: Story from Conversation ID 7ae5a4186e2e4fc9bd4209d19b3231b7
+  steps:
+  - intent: ever_go_bed
+  - action: utter_ever_go_bed
+- story: Story from Conversation ID 1a7070cbbe064451bae8a84715e9dbfc
+  steps:
+  - intent: really_AI
+  - action: utter_really_AI
+- story: Story from Conversation ID 1779af4c29e14425a92a38ae5a9ea2b8
+  steps:
+  - intent: ask_question
+  - action: utter_ask_question
+- story: Story from Conversation ID a7f344939bbf47a8847f25ab90962511
+  steps:
+  - intent: do_you_exist
+  - action: utter_do_you_exist
+- story: Story from Conversation ID 231b909295a84c2287bb96acfbdda34a
+  steps:
+  - intent: college_is_great
+  - action: utter_college_is_great
+- story: Story from Conversation ID f8e7fea200b24e0688201f0c763bb56e
+  steps:
+  - intent: Aloha
+  - action: utter_Aloha
+- story: Story from Conversation ID dc4ef6c7348b4ea7a6a283bf9db7ccb6
+  steps:
+  - intent: what_SSN
+  - action: utter_what_SSN
+- story: Story from Conversation ID f99f2df97b4d4bf2a0d826c0104aff35
+  steps:
+  - intent: very_sick
+  - action: utter_very_sick
+- story: Story from Conversation ID 79b8b286ad414233bc5db1a140aa1ea6
+  steps:
+  - intent: link_not_work
+  - action: utter_link_not_work
+- story: Story from Conversation ID 24e3d305621d4c13a3c4a7cf8882fab2
+  steps:
+  - intent: be_friends
+  - action: utter_be_friends
+- story: Story from Conversation ID b63550fc06fd46a0aa7957e4238fe60c
+  steps:
+  - intent: about_ASU
+  - action: utter_about_ASU
+- story: Story from Conversation ID 9ea4a131d7b44759a1422020e1c63a3d
+  steps:
+  - intent: do_the_task_soon
+  - action: utter_do_the_task_soon
+- story: Story from Conversation ID de887ab35b074d3f9504e52a3082e27f
+  steps:
+  - intent: you_dumb
+  - action: utter_you_dumb
+- story: Story from Conversation ID 9f0a547cf56e4a3ba4e52e5071c9d1bd
+  steps:
+  - intent: ever_take_vacation
+  - action: utter_ever_take_vacation
+- story: Story from Conversation ID 8c54c960b6454b8198a2b51c9c1579c0
+  steps:
+  - intent: do_it_right_away
+  - action: utter_do_it_right_away
+- story: Story from Conversation ID 197f2dd7861e4c29b1cfbb5a57e6af49
+  steps:
+  - intent: Haha
+  - action: utter_Haha
+- story: Story from Conversation ID df61c2b931fb44a2851d1b4bc4323348
+  steps:
+  - intent: you_best
+  - action: utter_you_best
+- story: Story from Conversation ID cca1545dde384cd598ea6d669be38c2e
+  steps:
+  - intent: good_evening
+  - action: utter_good_evening
+- story: Story from Conversation ID 9288c900579c4a4d938b99adf50fe5ea
+  steps:
+  - intent: have_no_question
+  - action: utter_have_no_question
+- story: Story from Conversation ID e82ee6b0b2d64346adeeab068040b5bf
+  steps:
+  - intent: change_profile
+  - action: utter_change_profile
+- story: Story from Conversation ID 552d637e41194b479f8d030e7415909b
+  steps:
+  - intent: Yay
+  - action: utter_Yay
+- story: Story from Conversation ID f948713c233f4b73baf55f2e1ef7b34c
+  steps:
+  - intent: Why
+  - action: utter_Why
+- story: Story from Conversation ID bcb8628b9d984054ac24caefd22c6943
+  steps:
+  - intent: share_data
+  - action: utter_share_data
+- story: Story from Conversation ID 2126e2b8ea844aaea5102d026544233d
+  steps:
+  - intent: joking
+  - action: utter_joking
+- story: Story from Conversation ID d94233d580574b3696e9089294b00a9d
+  steps:
+  - intent: real_person
+  - action: utter_real_person
+- story: Story from Conversation ID e28102b2ce674206b7a0e12cbf868f1a
+  steps:
+  - intent: bad_service
+  - action: utter_bad_service
+- story: Story from Conversation ID ae37eea579874c3ca909a1313b50b3f5
+  steps:
+  - intent: offensive_slang
+  - action: utter_offensive_slang
+- story: Story from Conversation ID d1157f71079b416bb65fe0a0e37dad1d
+  steps:
+  - intent: advice_for_freshman
+  - action: utter_advice_for_freshman
+- story: Story from Conversation ID 9ae7262c3e9f4d83ad946928bbf4272a
+  steps:
+  - intent: not_answer
+  - action: utter_not_answer
+- story: Story from Conversation ID 879804bc81ed47558077996ba21ec52e
+  steps:
+  - intent: all_set
+  - action: utter_all_set
+- story: Story from Conversation ID 99c1cd74494947e7bde6faa32be58a6f
+  steps:
+  - intent: hey_bot
+  - action: utter_hey_bot
+- story: Story from Conversation ID d8112e48e0214d9a8f52c79ea09494c1
+  steps:
+  - intent: yes
+  - action: utter_yes
+- story: Story from Conversation ID e97e20207ca24fe99fa09aae5956b4ee
+  steps:
+  - intent: tell_me_joke
+  - action: utter_tell_me_joke
+- story: Story from Conversation ID 35fee08d4b824d16b7aebbc1b15d1cb5
+  steps:
+  - intent: you_smart
+  - action: utter_you_smart
+- story: Story from Conversation ID 73bb1663fdd74093a58b8102e0ac2997
+  steps:
+  - intent: make_food
+  - action: utter_make_food
+- story: Story from Conversation ID 9bd211796d484a6dbbc28c9aa6d09b76
+  steps:
+  - intent: Huh
+  - action: utter_Huh
+- story: Story from Conversation ID 73c3c1fcf3684adca68c4a0c2a10c613
+  steps:
+  - intent: you_talk_alot
+  - action: utter_you_talk_alot
+- story: Story from Conversation ID e411d8dd5c5c4d039ea28a72fd2aadec
+  steps:
+  - intent: great_job_designers
+  - action: utter_great_job_designers
+- story: Story from Conversation ID 1f0b04e320524f749e709888e2615ee9
+  steps:
+  - intent: hello_hey
+  - action: utter_hello_hey
+- story: Story from Conversation ID d439447446bc4938b00dcd0fe2c12df3
+  steps:
+  - intent: call_me
+  - action: utter_call_me
+- story: Story from Conversation ID ee81eb1cde124e11b5303978741ef63a
+  steps:
+  - intent: fun_fact_ASU
+  - action: utter_fun_fact_ASU
+- story: Story from Conversation ID fda8e23c4d84484d8238186745114e70
+  steps:
+  - intent: lie_to_me
+  - action: utter_lie_to_me
+- story: Story from Conversation ID 303bd87aa74549bb84344fce80124324
+  steps:
+  - intent: test_question
+  - action: utter_test_question
+- story: Story from Conversation ID 93cbb0617f0c4a23aed62b229604b463
+  steps:
+  - intent: what_up
+  - action: utter_what_up
+- story: Story from Conversation ID 18f1ce74611f45c9a0d51ddebc2c6642
+  steps:
+  - intent: leave_ASU
+  - action: utter_leave_ASU
+- story: Story from Conversation ID 944533c54c0b4f3ba87a3c7613056640
+  steps:
+  - intent: accept_into_ASU
+  - action: utter_accept_into_ASU

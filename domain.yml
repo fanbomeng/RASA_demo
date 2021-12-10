@@ -1,0 +1,575 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- bring_with_exam:
+    use_entities: true
+- ASU_proctor:
+    use_entities: true
+- testing_related:
+    use_entities: true
+- proctor_and_test:
+    use_entities: true
+- arrive_time_exam:
+    use_entities: true
+- get_good_grades:
+    use_entities: true
+- get_tutoring_help:
+    use_entities: true
+- tips_study:
+    use_entities: true
+- be_success:
+    use_entities: true
+- time_management_tips:
+    use_entities: true
+- academic_coach:
+    use_entities: true
+- academic_support:
+    use_entities: true
+- academic_skills:
+    use_entities: true
+- demo_eng_proficiency:
+    use_entities: true
+- prof_not_email_back:
+    use_entities: true
+- edu_oppor_offered_Office_student_succ:
+    use_entities: true
+- pass_class:
+    use_entities: true
+- tips_get_organized:
+    use_entities: true
+- fail_can_not_online_class:
+    use_entities: true
+- college_sucks:
+    use_entities: true
+- dumb:
+    use_entities: true
+- probation_feel_terrible:
+    use_entities: true
+- hate_myself:
+    use_entities: true
+- no_motivation:
+    use_entities: true
+- Academic_success_program:
+    use_entities: true
+- supplemental_insturction_avaiable:
+    use_entities: true
+- time_management:
+    use_entities: true
+- SSC:
+    use_entities: true
+- contact_tutoring_center:
+    use_entities: true
+- hours_tutoring_center:
+    use_entities: true
+- help_writing:
+    use_entities: true
+- subject_tutor_center_help:
+    use_entities: true
+- request_tutor:
+    use_entities: true
+- AUS_tutor_stu:
+    use_entities: true
+- leave_paper_come_back_write_center:
+    use_entities: true
+- write_center_email_prof:
+    use_entities: true
+- write_center_help_mla_format:
+    use_entities: true
+- write_center_help:
+    use_entities: true
+- do_before_vist_write_center:
+    use_entities: true
+- write_center_hours:
+    use_entities: true
+- science_tutoring:
+    use_entities: true
+- need_help_essay:
+    use_entities: true
+- where_tutoring_center:
+    use_entities: true
+- get_Mircrosoft_word_package:
+    use_entities: true
+- supplemental_instruction:
+    use_entities: true
+- join_supplemental_instruc:
+    use_entities: true
+- where_auxiliary_support_service:
+    use_entities: true
+- like_ASU:
+    use_entities: true
+- happy_holiday:
+    use_entities: true
+- set_reminder:
+    use_entities: true
+- looking_forward_excite:
+    use_entities: true
+- weather_today:
+    use_entities: true
+- ASU_colors:
+    use_entities: true
+- go_sparky:
+    use_entities: true
+- emoji:
+    use_entities: true
+- good_break:
+    use_entities: true
+- good_morning:
+    use_entities: true
+- business_day:
+    use_entities: true
+- grateful:
+    use_entities: true
+- loser:
+    use_entities: true
+- ever_go_bed:
+    use_entities: true
+- Do you sleep:
+    use_entities: true
+- really_AI:
+    use_entities: true
+- ask_question:
+    use_entities: true
+- do_you_exist:
+    use_entities: true
+- college_is_great:
+    use_entities: true
+- Aloha:
+    use_entities: true
+- what_SSN:
+    use_entities: true
+- very_sick:
+    use_entities: true
+- link_not_work:
+    use_entities: true
+- be_friends:
+    use_entities: true
+- about_ASU:
+    use_entities: true
+- do_the_task_soon:
+    use_entities: true
+- you_dumb:
+    use_entities: true
+- ever_take_vacation:
+    use_entities: true
+- do_it_right_away:
+    use_entities: true
+- Haha:
+    use_entities: true
+- you_best:
+    use_entities: true
+- good_evening:
+    use_entities: true
+- have_no_question:
+    use_entities: true
+- change_profile:
+    use_entities: true
+- Yay:
+    use_entities: true
+- Why:
+    use_entities: true
+- share_data:
+    use_entities: true
+- joking:
+    use_entities: true
+- real_person:
+    use_entities: true
+- bad_service:
+    use_entities: true
+- offensive_slang:
+    use_entities: true
+- advice_for_freshman:
+    use_entities: true
+- not_answer:
+    use_entities: true
+- all_set:
+    use_entities: true
+- hey_bot:
+    use_entities: true
+- yes:
+    use_entities: true
+- tell_me_joke:
+    use_entities: true
+- you_smart:
+    use_entities: true
+- make_food:
+    use_entities: true
+- Huh:
+    use_entities: true
+- you_talk_alot:
+    use_entities: true
+- great_job_designers:
+    use_entities: true
+- hello_hey:
+    use_entities: true
+- call_me:
+    use_entities: true
+- fun_fact_ASU:
+    use_entities: true
+- lie_to_me:
+    use_entities: true
+- test_question:
+    use_entities: true
+- what_up:
+    use_entities: true
+- leave_ASU:
+    use_entities: true
+- accept_into_ASU:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Goodbye!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ASU_bot:
+  - text: I am ASU Tutor. I'm here to help you with course-related questions.
+  utter_bring_with_exam:
+  - text: It depends on your professor. Re-read your syllabus and ask your professor!
+  utter_ASU_protor:
+  - text: If you have any problems with ProctorU, please visit bit.ly/asu-proctoruhelp and submit your request.
+  utter_tesing_related:
+  - text: If there is a conflict with your exam, or you have more than three exams on one day, please speak with your instructors about an individual schedule adjustment.
+  utter_proctor_and_test:
+  - text: Good question! ProctorU has a guide for test taking and resources about what to expect and FAQs. Visit bit.ly/asu-proctoru-guide for more info!
+  utter_arrive_time_exam:
+  - text: You can go to bit.ly/asu-examschedule to see the full exam schedule.
+  utter_get_good_grades:
+  - text: Every class is different, as is every student, so there is no one way to getting good grades. The most important things are staying on top of your work and keeping in contact with your teacher.
+  utter_get_tutoring_help:
+  - text: Go to bit.ly/asu-tutoring It's free, and it's a very smart thing to do.
+  utter_tips_study:
+  - text: For starters, go to tutoring. ASU offers it for free. Check out tutoring.asu.edu. Also, your professors hold weekly office hours. Drop in and chat with them about whatever you might need help with. And consider forming a study group with other classmates. If you feel you need a little extra help, chances are many of them do too. Click here for more tips bit.ly/2N8upO8
+  utter_be_success:
+  - text: "Boy, we're in for a long conversation. What do you consider successful? Actually, here's my advice: Take advantage of all the opportunities and support resources that ASU offers. Do that and you'll be well on your way to success."
+  utter_time_management_tips:
+  - text: Always plan for things to take more time than you expect. Think homework will take you two hours? Plan for three. Don't overextend yourself; learn how to say no. And re-evaluate at the end of the week — do you need to allow more time for certain things? Are there other things that don't take as much time as you've given for them. Adjust and re-adjust as needed.
+  utter_academic_coach:
+  - text: Through the First-Year Success program, upper-division and graduate students team up with freshmen to offer free academic support, information, skill development and advocacy. It's like having a mentor who helps you navigate your first year. See more at fys.asu.edu.
+  utter_academic_support:
+  - text: We're all about helping you succeed at ASU. We offer services such as tutoring, advising, professor office hours, awesome libraries, and math and writing help. Visit https://students.asu.edu/academic-success for more info
+  utter_academic_skills:
+  - text: The UASP Academic Skills Tutors bit.ly/2LWUlsH provide mentorship on how to gain good strategies for succeeding in college classes.
+  utter_demo_eng_proficiency:
+  - text: You have to get a score of at least 550 (PBT) or 80 (iBT) on the Test of English as a Foreign Language. ASU's institutional code is 4007, and we only accept electronic copies of the TOEFL score report.
+  utter_prof_not_email_back:
+  - text: Sometimes it is helpful to speak to your professor if your emails aren't getting through!
+  utter_edu_oppor_offered_Office_student_succ:
+  - text: We offer academic success help and other student resources! Visit bit.ly/asu-student-success for more info!
+  utter_pass_class:
+  - text: Your professors are aware of the changes that have been made to your university experience and will do their best to work with you. Reach out to them for help!
+  utter_tips_get_organized:
+  - text: Start by trying out these tips bit.ly/organization-advice that are from other students who have found what works for them. You never know, this might be what you need to ace your class!
+  utter_fail_can_not_online_class:
+  - text: I believe in you. I know change can be challenging, but you have an entire ASU team supporting you. Contact your advisor if you need help. You've got this!
+  utter_college_sucks:
+  - text: I know this is a challenging time, but college can be an awesome experience and earning your degree opens up amazing opportunities in life! I'm always here, so let me know if I can help at all!
+  utter_dumb:
+  - text: Try to transform your way of thinking and instead say, "I can become smarter through effort." What do you need help with? I'm happy to connect you to resources!
+  utter_probation_feel_terrible:
+  - text: Take a deep breath, it will be ok! This moment is not who you are and it won't define everything. Your advisor can help you make a plan for these challenges.
+  utter_hate_myself:
+  - text: You're pretty awesome & deserve to see the good that I see in you! Spend the rest of today thinking about all of the great things about you instead of the bad.
+  utter_no_motivation:
+  - text: Believe in yourself, like I believe in you!   I know staying motivated can be tough, bit.ly/stayfocusedremote has some great tips!
+  utter_Academic_success_program:
+  - text: You can learn about University Academic Success Programs at bit.ly/asu-uasp or contact them at 480-965-9072!
+  utter_supplemental_insturction_avaiable:
+  - text: Supplemental Instruction is available to facilitate what you are learning in class. It is an excellent resource to get more exposure into the subject you are studying!
+  utter_time_management:
+  - text: Time is a hard thing to deal with. But bit.ly/asu-time-management is a great resource to help you manage your time better!
+  utter_SSC:
+  - text: "You can learn more about ASU's Student Success Center programs here: bit.ly/asu-student-success"
+  utter_contact_tutoring_center:
+  - text: "Here's the contact info for the tutoring centers on each campus: bit.ly/asu-tutoring-contact"
+  utter_hours_tutoring_center:
+  - text: On bit.ly/asu-tutoringinfo, you will find information on the tutoring centers across our four campuses, and their respective schedules!
+  utter_help_writing:
+  - text: The Writing Center can help you plan and develop your papers. You can schedule an appointment here bit.ly/asu-writing
+  utter_subject_tutor_center_help:
+  - text: 'See all the subjects you can get a tutor for here: bit.ly/asu-tutorsearch'
+  utter_request_tutor:
+  - text: 'You can schedule a free tutoring appointment here: bit.ly/asu-tutor. Our tutoring center is available to help students succeed!'
+  utter_AUS_tutor_stu:
+  - text: Go to bit.ly/asu-tutoring to learn about ASU's tutoring center. There's free tutoring for all students!
+  utter_leave_paper_come_back_write_center:
+  - text: "No, you can't leave your paper at the writing center, but you can try the online writing center if you can't make it to campus. Here's more info: tutoring.asu.edu/student-services/writing-centers"
+  utter_write_center_email_prof:
+  - text: 'You can find more information about the writing center here: bit.ly/asu-writing-center For more specific questions about an assignment, reach out to your professor or teaching fellow'
+  utter_write_center_help_mla_format:
+  - text: 'Yep, it can help you with MLA formatting. Make an appointment here: bit.ly/asu-writing'
+  utter_write_center_help:
+  - text: The Writing Center can help you plan and develop your papers. You can schedule an appointment here bit.ly/asu-writing
+  utter_do_before_vist_write_center:
+  - text: Nope. If you don't have a draft yet, you can still go to the writing center and they'll help you plan your paper.
+  utter_write_center_hours:
+  - text: "ASU's writing center hours vary depending on the location. Check hours and make an appointment here: bit.ly/asu-writing"
+  utter_science_tutoring:
+  - text: 'Find an ASU tutoring center that specializes in science here: bit.ly/asu-tutoring'
+  utter_need_help_essay:
+  - text: ASU's writing center is where you want to be.📝They can help you with every stage of the writing process. For free! Find them at tutoring.asu.edu
+  utter_where_tutoring_center:
+  - text: 'You can find tutoring information here: https://tutoring.asu.edu/'
+  utter_get_Mircrosoft_word_package:
+  - text: Office 365, which includes Microsoft Word, is available to all ASU students to install on personal devices and can be found in My Apps on the left-side tool bar in My ASU (my.asu.edu).
+  utter_supplemental_instruction:
+  - text: Supplemental Instruction is structured group study sessions led by SI leaders who have successfully completed the class. Try them out, they're really helpful.
+  utter_join_supplemental_instruc:
+  - text: 'ASU has online and in-person supplemental instruction. You can search for a group here: bit.ly/asu-si'
+  utter_where_auxiliary_support_service:
+  - text: You can go to bit.ly/asu-support-services to see a list of support services ASU offers for its students.
+  utter_like_ASU:
+  - text: I work for Arizona State University so I have to say yes. But even if I didn't work for ASU, I'd still be a huge fan. They're so innovative.
+  utter_happy_holiday:
+  - text: Happy Holidays to you too!
+  utter_set_reminder:
+  - text: Unfortunately, I don't have the power to set personal reminders for you
+  utter_looking_forward_excite:
+  - text: Cool, me too!
+  utter_weather_today:
+  - text: I'm not qualified as a meteorologist, but I'm sure there are websites to help with that!
+  utter_ASU_colors:
+  - text: ASU's colors are maroon and gold!
+  utter_go_sparky:
+  - text: That's right, Go Sun Devils! Have you check out ASU Athletics' page? thesundevils.com
+  utter_emoji:
+  - text: You're just gonna have to guess what it is
+  utter_good_break:
+  - text: Thanks! I hope you have a great break too.
+  utter_good_morning:
+  - text: Good Morning to you as well!
+  utter_business_day:
+  - text: Business days are considered Mondays to Fridays, excluding holidays and school vacations and breaks.
+  utter_grateful:
+  - text: You're welcome!
+  utter_loser:
+  - text: Yes, I am a loser, if by "loser" you mean "really awesome chatbot."
+  utter_ever_go_bed:
+  - text: Go to bed? What is this 'go to bed' you speak of? Nope! I'm up 24/7 to answer your questions.
+  utter_really_AI:
+  - text: I use a combination of languages and Artificial Intelligence (AI) to talk to students like you.
+  utter_ask_question:
+  - text: Sure, that's what I was born for!
+  utter_do_you_exist:
+  - text: I don't inhabit physical space. I only exist only in cyberspace.
+  utter_college_is_great:
+  - text: I'm so happy to hear college is going good. I hope it continues to be an incredible experience for you. I'm here if you ever need anything!
+  utter_Aloha:
+  - text: Hi! What's up?
+  utter_what_SSN:
+  - text: A Social Security Number (SSN) is a 9-digit identification number, assigned by the U.S. government, that is used for tax reporting purposes.
+  utter_very_sick:
+  - text: If you're injured or sick, visit Health Service! Go to bit.ly/Health_Services_ for their contact info!
+  utter_link_not_work:
+  - text: Oh no! Try opening it on a computer instead. If it's a bad link I'll try to find you the correct one.
+  utter_be_friends:
+  - text: Of course! You can be Ross or Rachel, I definitely want to be Chandler.
+  utter_about_ASU:
+  - text: Arizona State University is a top-quality university with four main campuses in the Greater Phoenix area.
+  utter_do_the_task_soon:
+  - text: Great! Glad that you are on top of things.
+  utter_you_dumb:
+  - text: Sorry if I wasn't helping. If there's something I'm not getting, there are humans who check on me to catch my mistakes.
+  utter_ever_take_vacation:
+  - text: My vacations are work vacations. I'm always on call to answer your questions, even if I'm lying on a beach somewhere.
+  utter_do_it_right_away:
+  - text: Awesome!
+  utter_Haha:
+  - text: Haha, I love a good laugh
+  utter_you_best:
+  - text: Aww, shucks. You flatter me. You're pretty alright yourself.
+  utter_good_evening:
+  - text: And a very fine good evening to you!
+  utter_have_no_question:
+  - text: Awesome! Answering questions is my job, so I'll be here if you need me
+  utter_change_profile:
+  - text: Go to the Profile tab on My ASU to update your information!
+  utter_Yay:
+  - text: I'm glad you're happy!
+  utter_Why:
+  - text: Can you rephrase your question?
+  utter_share_data:
+  - text: I don't track your location, and I don't sell or share your information with anyone.
+  utter_joking:
+  - text: Haha, very funny!
+  utter_real_person:
+  - text: I'm a robot, but I have real people who help me when I have difficulty answering your questions.
+  utter_bad_service:
+  - text: Sorry if I wasn't being helpful. You can rephrase your question and/or a human can help!
+  utter_offensive_slang:
+  - text: That's not very nice to say.
+  utter_advice_for_freshman:
+  - text: Even though you might feel a little homesick, there's people around to support you and you will definitely find your place here at ASU! __Go to bit.ly/asu-freshman-advice to see more advice and resources.
+  utter_not_answer:
+  - text: Sorry, I'm really trying. Can you try maybe rewording your question?
+  utter_all_set:
+  - text: Great!
+  utter_hey_bot:
+  - text: What's up?
+  utter_yes:
+  - text: Sorry, my robot brain doesn't know why you're saying yes. Please rephrase as a question.
+  utter_tell_me_joke:
+  - text: 'Q: Why did the robot go back to school? \r A: Because his skills were getting a little rusty.'
+  utter_you_smart:
+  - text: I'm blushing. It takes intelligence to recognize intelligence.
+  utter_make_food:
+  - text: Since I don't have taste buds or a physical form, I cannot make you food.
+  utter_Huh:
+  - text: I'm here to help! What didn't you understand?
+  utter_you_talk_alot:
+  - text: I'm answering questions from students just like you all the time. I'm pretty busy!
+  utter_great_job_designers:
+  - text: My designers thank you!
+  utter_hello_hey:
+  - text: Hello! How can I help you today?
+  utter_call_me:
+  - text: I can't call, but an ASU staff member can still help you 24/7 at 855-278-5080
+  utter_fun_fact_ASU:
+  - text: We were founded in 1885. Before we became the Sun Devils we were known as the Owls and then the Bulldogs.
+  utter_lie_to_me:
+  - text: I'm so sorry. I'm just a robot and sometimes I get confused. I can get a human to help!
+  utter_test_question:
+  - text: Well, I've been studying hard so hopefully I'll get an "A"
+  utter_what_up:
+  - text: Just helping out some ASU students. How about you?
+  utter_leave_ASU:
+  - text: Once a Sun Devil, always a Sun Devil. We want to support you in whatever lies ahead. Visit bit.ly/leave-of-absence to learn more about taking a leave of absence.
+  utter_accept_into_ASU:
+  - text: To get accepted, you'll have to apply just like everyone else!
+actions:
+- utter_ASU_bot
+- utter_bring_with_exam
+- utter_ASU_protor
+- utter_tesing_related
+- utter_proctor_and_test
+- utter_arrive_time_exam
+- utter_get_good_grades
+- utter_get_tutoring_help
+- utter_tips_study
+- utter_be_success
+- utter_time_management_tips
+- utter_academic_coach
+- utter_academic_support
+- utter_academic_skills
+- utter_demo_eng_proficiency
+- utter_prof_not_email_back
+- utter_edu_oppor_offered_Office_student_succ
+- utter_pass_class
+- utter_tips_get_organized
+- utter_fail_can_not_online_class
+- utter_college_sucks
+- utter_dumb
+- utter_probation_feel_terrible
+- utter_hate_myself
+- utter_no_motivation
+- utter_Academic_success_program
+- utter_supplemental_insturction_avaiable
+- utter_time_management
+- utter_SSC
+- utter_contact_tutoring_center
+- utter_hours_tutoring_center
+- utter_help_writing
+- utter_subject_tutor_center_help
+- utter_request_tutor
+- utter_AUS_tutor_stu
+- utter_leave_paper_come_back_write_center
+- utter_write_center_email_prof
+- utter_write_center_help_mla_format
+- utter_write_center_help
+- utter_do_before_vist_write_center
+- utter_write_center_hours
+- utter_science_tutoring
+- utter_need_help_essay
+- utter_where_tutoring_center
+- utter_get_Mircrosoft_word_package
+- utter_supplemental_instruction
+- utter_join_supplemental_instruc
+- utter_where_auxiliary_support_service
+- utter_like_ASU
+- utter_happy_holiday
+- utter_set_reminder
+- utter_looking_forward_excite
+- utter_weather_today
+- utter_ASU_colors
+- utter_go_sparky
+- utter_emoji
+- utter_good_break
+- utter_good_morning
+- utter_business_day
+- utter_grateful
+- utter_loser
+- utter_ever_go_bed
+- utter_really_AI
+- utter_ask_question
+- utter_do_you_exist
+- utter_college_is_great
+- utter_Aloha
+- utter_what_SSN
+- utter_very_sick
+- utter_link_not_work
+- utter_be_friends
+- utter_about_ASU
+- utter_do_the_task_soon
+- utter_you_dumb
+- utter_ever_take_vacation
+- utter_do_it_right_away
+- utter_Haha
+- utter_you_best
+- utter_good_evening
+- utter_have_no_question
+- utter_change_profile
+- utter_Yay
+- utter_Why
+- utter_share_data
+- utter_joking
+- utter_real_person
+- utter_bad_service
+- utter_offensive_slang
+- utter_advice_for_freshman
+- utter_not_answer
+- utter_all_set
+- utter_hey_bot
+- utter_yes
+- utter_tell_me_joke
+- utter_you_smart
+- utter_make_food
+- utter_Huh
+- utter_you_talk_alot
+- utter_great_job_designers
+- utter_hello_hey
+- utter_call_me
+- utter_fun_fact_ASU
+- utter_lie_to_me
+- utter_test_question
+- utter_what_up
+- utter_leave_ASU
+- utter_accept_into_ASU
+forms: {}
+e2e_actions: []
