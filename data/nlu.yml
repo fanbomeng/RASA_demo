@@ -1409,3 +1409,8 @@ nlu:
     - can you make it happen so i get accepted to ASU
     - tell the asu folks to accept me please
     - can you do me a huge favor and accept me at ASU
+- intent: ASU_bot
+  examples: |
+    - who are you
+    - what's your name
+    - how to call you

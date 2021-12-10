@@ -452,3 +452,7 @@ stories:
   steps:
   - intent: accept_into_ASU
   - action: utter_accept_into_ASU
+- story: Story from Conversation ID 4f1b709ac3fb43718b71ae60b74b5603
+  steps:
+  - intent: ASU_bot
+  - action: utter_ASU_bot
