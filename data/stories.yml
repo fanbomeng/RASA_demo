@@ -456,3 +456,7 @@ stories:
   steps:
   - intent: ASU_bot
   - action: utter_ASU_bot
+- story: Story from Conversation ID 5f019f3778a44f0d95b4e9109eab02c6
+  steps:
+  - intent: bring_with_exam
+  - action: utter_bring_with_exam
