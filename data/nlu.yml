@@ -303,6 +303,7 @@ nlu:
     - Do you love working for asu
     - do you enoy it here
     - do you like ASU
+    - do you like asu
 - intent: happy_holiday
   examples: |
     - Happy holiday
@@ -326,6 +327,7 @@ nlu:
     - Have a very merry Christmas
     - I wish you a happy holiday!
     - Merry Christmas
+    - happy holiday
 - intent: set_reminder
   examples: |
     - set a reminder for me
@@ -872,6 +874,7 @@ nlu:
     - You make me laugh
     - That made me giggle
     - ngl that was actually hilarious
+    - haha
 - intent: you_best
   examples: |
     - Thank you! You are the best!
