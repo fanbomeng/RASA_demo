@@ -1,0 +1,1418 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Goodbye my robotic buddy
+    - GBFN
+    - Bye son
+    - Adios amigo
+    - peace out homie
+    - talk to u later
+    - later
+    - ttyl
+    - See ur text later bye
+    - Bye I'll talk to you later
+    - Talk to you tomorrow
+    - Talk later
+    - I gotta go
+    - Dueces
+    - Bye queen
+    - Goodbye friend.
+    - Byeee
+    - adios for now
+    - ciao
+    - Have a nice day goodbye
+    - bye my friend
+    - Goodbye <3
+    - farewell
+    - peace out
+    - gtg
+    - see ya later
+    - nice talking to you goodbye
+    - I g2g
+    - g2g
+- intent: yes
+  examples: |
+    - yes
+    - Definitely
+    - Yes mam
+    - yep!
+    - yee
+    - YEEEES
+    - yeah uh huh
+    - YAAAASSS
+    - yup
+    - yah
+    - YESSSSSSS PLEASE
+- intent: affirm
+  examples: |
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: bring_with_exam
+  examples: |
+    - What do I need to bring with me on the day of my exam
+- intent: ASU_proctor
+  examples: |
+    - Why are the permitted resources on ProctorU and information provided by the instructor different?
+    - Why does the proctor keep interrupting me because I am out of the camera view?
+    - Why did I receive an email about a recent testing experience?
+- intent: testing_related
+  examples: |
+    - I had problems and couldn't test during the testing period, what should I do?
+- intent: proctor_and_test
+  examples: |
+    - Why is the proctor looking at my walls, floor, ceiling, desk/table and under my desk/table?
+    - Why am I required to pan the testing area?
+    - Does the setup time for the test take away from the time I have to test?
+    - Why is the pan of the room different for each exam I take?
+- intent: arrive_time_exam
+  examples: |
+    - What time should I arrive for my exam?
+- intent: get_good_grades
+  examples: |
+    - How do I get good grades?
+- intent: get_tutoring_help
+  examples: |
+    - how can i get tutoring help
+- intent: tips_study
+  examples: |
+    - what are some good study tips
+- intent: be_success
+  examples: |
+    - how can I be successful
+- intent: time_management_tips
+  examples: |
+    - Do you have any time management tips?
+- intent: academic_coach
+  examples: |
+    - what is an academic coach
+    - what is academic coaching
+- intent: academic_support
+  examples: |
+    - do you have academic support
+- intent: academic_skills
+  examples: |
+    - How can I improve my academic skills?
+- intent: demo_eng_proficiency
+  examples: |
+    - How can i demonstrate english proficiency
+- intent: prof_not_email_back
+  examples: |
+    - What should I do if my professor won't email me back?
+- intent: edu_oppor_offered_Office_student_succ
+  examples: |
+    - What educational opportunity programs are offered through the Office of Student Success?
+- intent: pass_class
+  examples: |
+    - I'm really struggling to pass my class
+- intent: tips_get_organized
+  examples: |
+    - Do you have any tips for getting organized?
+- intent: fail_can_not_online_class
+  examples: |
+    - I'm going to fail, I can't do online classes
+- intent: college_sucks
+  examples: |
+    - College sucks
+    - I hate college
+    - hate college
+    - the school sucks
+    - I'm stupid and I'm never going to do good in college
+    - i hate it here soooo much
+    - coming here was a huge mistake
+    - college sucks
+- intent: dumb
+  examples: |
+    - I'm dumb
+    - I am dumb
+- intent: probation_feel_terrible
+  examples: |
+    - I am on probation and feel really terrible, what should I do?
+- intent: hate_myself
+  examples: |
+    - I hate myself
+- intent: no_motivation
+  examples: |
+    - I have no motivation.
+- intent: Academic_success_program
+  examples: |
+    - What academic support and outreach programs are offered through the Office of Student Success?
+    - What is the office of student success?
+    - What is the office of student success
+- intent: supplemental_insturction_avaiable
+  examples: |
+    - Why is Supplemental Instruction available?
+    - supplemental instruction avaiable
+- intent: time_management
+  examples: |
+    - I need help with time management
+- intent: SSC
+  examples: |
+    - What is SSC
+    - what is SSC
+- intent: contact_tutoring_center
+  examples: |
+    - how can i contact the tutoring center
+- intent: hours_tutoring_center
+  examples: |
+    - what are the hours of the tutoring center
+- intent: help_writing
+  examples: |
+    - where can i get help for writing
+- intent: subject_tutor_center_help
+  examples: |
+    - what subjects does the tutoring center help with
+- intent: request_tutor
+  examples: |
+    - how do I request a tutor
+- intent: AUS_tutor_stu
+  examples: |
+    - does ASU have tutoring for students
+- intent: leave_paper_come_back_write_center
+  examples: |
+    - can i leave my paper and come back later at the writing center
+- intent: write_center_email_prof
+  examples: |
+    - can the writing center email my professors
+- intent: write_center_help_mla_format
+  examples: |
+    - can the writing center help me with mla formatting
+- intent: write_center_help
+  examples: |
+    - what help does the writing center provide
+- intent: do_before_vist_write_center
+  examples: |
+    - what do i need to do before visiting the writing center
+- intent: write_center_hours
+  examples: |
+    - what are the hours of the writing center
+- intent: science_tutoring
+  examples: |
+    - When is science tutoring?
+- intent: need_help_essay
+  examples: |
+    - i need help writing an essay
+- intent: where_tutoring_center
+  examples: |
+    - where is the tutoring center
+    - where is tutoring center
+- intent: get_Mircrosoft_word_package
+  examples: |
+    - Can I get Microsoft word package from the school ?
+    - can i get Microsoft word pacakge from the school
+- intent: supplemental_instruction
+  examples: |
+    - what is supplemental instruction?
+    - What is SI?
+- intent: join_supplemental_instruc
+  examples: |
+    - how do i join supplemental instruction
+- intent: where_auxiliary_support_service
+  examples: |
+    - where can i find auxiliary and support services
+    - find auxiliary and supprot
+- intent: like_ASU
+  examples: |
+    - Do you like ASU
+    - do you enjoy being a devil
+    - are you happy being a sun devil
+    - do you enjoy working at ASU
+    - Do you like this school
+    - do you like this university
+    - are you happy at this school
+    - are you a fan of asu
+    - Are you a sun devil fan
+    - do you like it here
+    - Do you enjoy it here
+    - Do you love working for asu
+    - do you enoy it here
+    - do you like ASU
+- intent: happy_holiday
+  examples: |
+    - Happy holiday
+    - Alright thank you happy holidays
+    - Aww happy thanksgiving __ to you!
+    - Feliz navidad!!
+    - happy 4th of July
+    - Happy Easter
+    - Happy Fourth!
+    - happy halloween
+    - Happy Holy Days
+    - Happy Hanukkah
+    - Happy new year!
+    - happy spooky season
+    - happy ramadan
+    - happy turkey day
+    - Happy world kindness day!
+    - have a good holiday
+    - Happy Valentine's Day!
+    - Have a great Christmas
+    - Have a very merry Christmas
+    - I wish you a happy holiday!
+    - Merry Christmas
+- intent: set_reminder
+  examples: |
+    - set a reminder for me
+    - Can you remind me about this in a few days
+    - Can you remind me in a couple days
+    - can you remind me on Monday
+    - Can you remind me to apply
+    - can you set a reminder for me
+    - Can you set up reminders
+    - Do you do reminders
+    - Can you wake me up at 7am
+    - please set a reminder
+    - Remind me that I have a paper due at 10am tomorrow
+    - remind me to
+    - set an alarm for me
+    - set a timer
+    - Will you alert me when I have homework due
+    - You didn't remind me
+    - Can I get reminders about if I have enrolled for next
+    - semester or not
+    - Can I be reminded of this when it starts
+    - FinAid reminders
+    - Okay can you remind me to register
+- intent: looking_forward_excite
+  examples: |
+    - I am looking forward to you helping me!
+    - I am so excited
+    - I am really looking forward to next semester
+    - I'm so happy to start the fall already
+    - School is starting tomorrow can't wait!
+    - Incredibly happy to be back in school
+    - I am looking forward to it
+    - so so so excited
+    - super happy rn
+    - i am pumped school is starting soon
+    - i'm ready for this semester
+    - i'm ready and so excited
+- intent: weather_today
+  examples: |
+    - Do you know what the weather is today
+    - Can you stop the rain
+    - Can you tell me the weather
+    - could you make AZ less hot
+    - How is the weather
+    - How is the weather today
+    - how's the weather
+    - how windy is it
+    - I hate this weather
+    - is it hot today
+    - is it sunny
+    - Weather
+    - What is the forecast
+    - What is the temperature
+- intent: ASU_colors
+  examples: |
+    - what are the school's colors
+    - what are the school's official colors
+    - What are ASU's colors
+    - do you know ASU's colors
+    - do you know the university colors
+    - what colors are ASU
+    - what are the school colors
+    - do you know the school's colors
+    - wut are asu's colors
+    - what are our colors
+    - what are our spirit colors
+- intent: go_sparky
+  examples:
+  - text: |
+      go sun devils
+  - text: |
+      go sparky
+  - text: |
+      let's go sparky
+  - text: |
+      let's go team
+  - text: |
+      let's go sun devils
+  - text: |
+      let's go sundevils
+  - text: |
+      let's go ASU
+  - text: |
+      go ASU
+  - text: |
+      Let's go sparky
+  - text: |
+      GO SUN DEVILS!
+  - text: |
+      sun devils all the way!
+  - text: |
+      sun devils are the best
+  - text: |
+      sun devils rock
+  - text: |
+      are you a sun devil
+  - text: |
+      right that sun devils are awesome
+  - text: |
+      GO SPARKY!
+  - text: |
+      ASU is the best school	
+  - text: |
+      Pretty sure ASU is the most amazing college
+  - text: |
+      Do you love sun devils	
+  - text: |
+      Do you love ASU
+- intent: emoji
+  examples: |
+    - Can you send me your favorite emoji
+    - emoji
+    - cool. what are your favorite emojis
+    - What's the weirdest emoji you can send out of curiosity
+    - What's your favorite emoji
+    - what emoji do you like the best
+    - send me your favorite emoji
+    - what is your favorite emoji
+    - which emoji is your fave
+- intent: good_break
+  examples: |
+    - Have a good break
+    - I hope your break was good!
+    - I hope you have a good break
+    - Have a great time over break
+    - have a good spring break g
+    - I hope you have a fantastic break friend
+    - wishing you a great break bot
+    - hey chatbot have a happy fall break
+    - hope you have a good vacation
+    - wishing you a wonderful winter break
+    - I hope you enjoy your fall break
+- intent: good_morning
+  examples:
+  - text: |
+      Good Morning!
+  - text: |
+      Good morning Bot
+  - text: |
+      Good morning my friend
+  - text: |
+      hey wake up
+  - text: |
+      hi good morning
+  - text: |
+      morning
+  - text: |
+      Morning	Wake up
+  - text: |
+      Morning to yah
+  - text: |
+      good morning!
+  - text: |
+      Good morning!
+  - text: |
+      morning sunshine!
+  - text: |
+      mornin
+- intent: business_day
+  examples: |
+    - When are business days
+    - are business days on weekdays
+    - Is Monday a business day
+    - Is Tuesday a business day
+    - Is Wednesday a business day
+    - Is Thursday a business day
+    - Is Friday a business day
+    - Is Saturday a business day
+    - Is Sunday a business day
+    - Is Mon a business day
+    - Is Tues a business day
+    - Is Wed a business day
+    - Is Thurs a business day
+    - Is Fri a business day
+    - Is Sat a business day
+    - Is Sun a business day
+    - what is a business day
+    - What are the normal business hours
+    - what are the regular business hours
+    - what does business hours mean
+    - when are business hours
+    - what is a business hours
+- intent: grateful
+  examples: |
+    - I am grateful
+    - AHHH!!!!! THANK YOU
+    - alright thanks
+    - Appreciated
+    - Awesome!!!
+    - Okay thank you so much!!!
+    - Awesome! Thank you!
+    - Excellent. Thank you.
+    - Awh thanks
+    - Hey thanks for responding
+    - Hiii thanks so much !
+    - Hi..thanks
+    - i appreciate the help
+    - I got it. Thank you
+    - I got it to work thank you
+    - thanks robot
+    - i like this little reminder thank you
+    - I'm thankful for you
+    - No thanks all good
+    - Okay! I sure will and Thank you for informing me
+    - thanks and will do
+    - okay tanks
+    - thanks a lot
+    - thanks bud
+    - thanks buddy
+    - Thanks bro I appreciate that
+    - thanks bro
+    - thanks bro bro
+    - thanks bb
+    - Thanks b
+    - Thankk youuuu__
+    - Sweet thanks for letting me know!
+    - Ok got it thx a lot!
+    - Thaaanks
+    - Ok...perfect..thanks
+    - Roger. Thank you.
+    - Ok__Thanks so much!
+    - Thank you for helping
+- intent: loser
+  examples: |
+    - You're a loser
+    - You're a big loser
+    - You're a complete loser
+    - You're such a loser
+    - What a loser
+    - Looser looser double looser
+    - that's what i just said loser
+    - u're a loser
+    - u loser
+    - wut a loser
+    - you a looooser
+- intent: ever_go_bed
+  examples: |
+    - Do you ever go to bed
+    - are u up
+    - Are you available for questions 24 hours a day Or just
+    - business hours?
+    - are you awake all the time
+    - are you awake in the middle of the night
+    - Are you really available 24/7
+    - Are you sleepy
+    - Are you still awake
+    - Are you tired
+    - Can you take a break
+    - Does time matter when I text you
+    - do you ever sleep
+    - Do you ever take a break
+    - Do you work all the time
+    - Do you want to sleep
+    - so are you available 24 hours
+    - When do you sleep
+    - Are You Sleeping
+- intent: Do you sleep
+  examples: |
+    - Do you sleep
+- intent: really_AI
+  examples: |
+    - How does the artificial intelligence work
+    - are u based off of AI that uses previous interactions
+    - Are u really AI
+    - are you an individual artificial intelligence for just me or
+    - everyone else for the ASU
+    - Are you artificial intelligence
+    - Are you coded through machine learning
+    - Are you on a android
+    - are you programmed
+    - Are you truly powered by artificial intelligence
+    - Do I train you by the questions I ask
+    - Do u work like Google
+    - do you do natural language processing
+    - do you learn as I talk to you
+    - Do you use deep learning algorithms or just preset
+    - responses
+    - Do you use machine learning
+    - have you become self-aware
+    - how are you getting smarter
+    - How can I help you improve your learning
+    - how does the artificial intelligence work
+    - how does the ai work
+    - How do you determine your responses
+    - How do you know how to answer my questions
+    - how do you know how to interpret what im saying
+    - i am just curious how the ai works
+    - so your an A.I program
+    - how do you respond to me
+    - do you work like google
+    - so your an AI rpogram
+- intent: ask_question
+  examples: |
+    - Can I ask you a question
+    - Alright I have quite the question so bear with me
+    - Am I able to ask questions through this text message
+    - can i ask a question
+    - can I ask a quick question
+    - can i ask questions about finance
+    - help please
+    - here is a question for you
+    - id love your help
+    - I do have a question if you can answer it.
+    - I have a couple questions actually
+    - i have a question for you
+- intent: do_you_exist
+  examples: |
+    - What are you made out of
+    - What are you made of
+    - what do you consist of
+    - where do you exist
+    - where do you live
+    - what materials are you out of
+    - how do you exist
+    - how are you possible
+    - how are you even real
+    - what was used to make you
+    - what u made of
+- intent: college_is_great
+  examples: |
+    - College life is good.
+    - Classes are going well thanks for checking up!
+    - School is so amazing
+    - so far college has been a great experience
+    - I am so happy here at ASU
+    - Coming to college is the best decision I ever made
+    - This university makes me so happy
+    - I am loving this college life
+    - The university experience has been so good to me
+    - College is so incredible i'm loving every second
+    - I am enjoying every minute of my time here
+    - I am so so happy at this college
+- intent: Aloha
+  examples: |
+    - Aloha
+    - are you there
+    - Bonjour
+    - Hayyyy
+    - hello stranger
+    - hello there my name is
+    - Hey i'm back
+    - Heyyyyy dude
+    - Oh heyy!!!
+    - well hi
+    - hi my name is
+- intent: what_SSN
+  examples:
+  - text: |
+      What is a social security number (SSN)
+  - text: |
+      what is a social security number
+  - text: |
+      what is a SSN
+  - text: |
+      what does SSN mean
+  - text: |
+      What is an SSN It asks what mine is when I go to check my status	
+  - text: |
+      status	 what's ssn digits
+  - text: |
+      What are SSN digits on my application
+  - text: |
+      What are my ssn digits
+  - text: |
+      what is the last four digits of SSN
+  - text: |
+      where do I find my SSN number
+  - text: |
+      Where do i enter my ssn
+  - text: |
+      What is the meaning of SSN
+  - text: |
+      Social security number is how many numbers
+  - text: |
+      How many numbers is your social security number
+  - text: |
+      do you know what an ssn number is	
+- intent: very_sick
+  examples: |
+    - I'm very sick
+    - Where can I go for medical services
+    - I am sick
+    - I do not feel well
+    - im feeling sick
+    - I feel sick
+    - I am very sick and I am on campus
+    - ive been feeling sick bros
+    - not feeling good man
+    - i'm feeling kind of ill
+    - I feel ill
+    - I'm feel unwell
+    - I've been feeling bad today
+    - Kind of think I'm getting sick
+    - I hurt my leg
+    - I have a stomach ache
+    - My arm has been in pain
+    - I fell and it hurts to walk
+    - what should i do if my head hurts
+- intent: link_not_work
+  examples: |
+    - How am I supposed to got the the link
+    - the link provided doesn't open up
+    - My phone can't open the link
+    - The link isn't opening up
+    - do you know why the link you sent may not be opening
+    - I think that link doesn't work it doesn't open
+    - I clicked the link you sent and nothing happened
+    - I'm not sure what's happening but that website doesn't work
+    - I think that page is down i clicked it and nothing happened
+    - how do i open that link
+- intent: be_friends
+  examples: |
+    - Can we be friends
+    - Are we besties
+    - Are we buddies now
+    - are we friends
+    - are you friendly
+    - are you my friend
+    - are you my quarantine friend
+    - besties
+    - Bet... so does that mean we are best friends
+    - can we be best friends
+    - can we be besties
+    - Can we be freinds
+    - can we be friends
+    - can you be my bestie
+    - Finally a real friend
+    - I can be your friend baby
+    - I'm saying your my best friend
+    - Ur my bf right
+    - Wanna be friends
+    - wanna be friends sis
+    - Thanks wanna be my friend
+    - Will you be my bud
+    - wanna be best friends
+- intent: about_ASU
+  examples: |
+    - What is ASU
+    - tell me about ASU
+    - share a lil more bout ASU
+    - tell me a little more about this school
+    - share brief info about ASU please
+    - can you tell me what ASU is
+    - do you know what aSU is
+    - do you know anything about this school
+    - what do you know bout this university
+    - can you share something about asu
+    - tell me somethin about this college
+- intent: do_the_task_soon
+  examples: |
+    - I will do the task soon!
+    - All applications have been completed
+    - all my pieces are sent in
+    - Anything Owed will be paid in full by then.
+    - Appreciate it ____I'll jump on that
+    - doing so at this moment
+    - i already sent it
+    - i am almost done
+    - Making my payment soon
+- intent: you_dumb
+  examples: |
+    - You are dumb
+    - are you dumb
+    - Are you stupid
+    - dumb robot
+    - dummy
+    - Not what I asked you.
+    - Ok. Chat bot. You are very annoying
+    - This is dumb
+    - This is stupid
+    - This is pathetic
+- intent: ever_take_vacation
+  examples: |
+    - Do you ever take a vacation
+    - are you going on vacation
+    - Wanna go to the beach with me
+    - We could get some ice cream too
+    - What's your favorite place to visit
+    - Have you been outside the country before
+    - how was your vacation
+    - Where do you like to go on vacation
+    - Do you take vacations
+    - I know. What are you doing for break
+    - What are you doing over spring break
+    - Thanks what are you doing for summer break
+    - What's your plans for summer
+    - what are your plans for summer vacation
+    - what are you doing for fall break
+    - will you be out during break
+- intent: do_it_right_away
+  examples: |
+    - I'll do that right away.
+    - alright
+    - Alrighty
+    - alrighty i'll do it
+    - Alrighty ! Will do
+    - aye aye captain
+    - Done
+    - Just did that
+    - Thanks you I completed it
+    - Just finished my tasks
+    - all my priority tasks are complete
+    - gonna do it now
+    - I'll do that asap
+    - Hi my problem is fixed now
+    - I just submitted the form
+    - i'll make sure to do it right away
+    - i'll make sure to get that completed
+    - i'll make sure to get that completed asap
+    - I'll try to have all of my forms completed within the next few days
+    - I'm completely online course way before this happened
+    - I'm just studying right now
+    - it's fixed
+    - just resolved my hold
+    - guess what I completed all my action items
+    - I am set for the fall semester
+    - I did what you told me to and I got financial aid
+- intent: Haha
+  examples: |
+    - Haha
+    - rofl
+    - lol bet
+    - Lmao
+    - Tehe
+    - Baha
+    - Lolz
+    - Hehe
+    - Ha
+    - Lol
+    - Haha I love a good laugh
+    - Haha I can't stop laughing
+    - haha lol
+    - lolololol
+    - loll
+    - lmao
+    - lmfao
+    - Hahaha XD
+    - you are hilarious
+    - that was so funny
+    - your joke cracked me up!
+    - Lmaooooooo
+    - LOL i can't with you
+    - You're funny lil bot
+    - You make me laugh
+    - That made me giggle
+    - ngl that was actually hilarious
+- intent: you_best
+  examples: |
+    - Thank you! You are the best!
+    - Best automated system ever ....
+    - i couldn't have done it without you
+    - you da best ya know dat
+    - i think you're cool
+    - you're so freaking awesome
+    - No you're breathtaking
+    - Sunny you're love!
+    - Ur a nice robot
+    - ur the best
+    - You are amazing
+    - you're my favorite bot ever
+    - you are the best chat bot to ever exist
+    - i hope you know how terrific you are
+- intent: good_evening
+  examples: |
+    - Good evening
+    - Good evening! I'm a student here
+    - Evening friend
+    - Good evening pal
+    - Good evening wonderful bot
+    - Good evening robo friend
+    - good evening to u
+    - wishing you a wonderful evening
+    - hope ya have a great evening
+    - enjoy your evening buddy
+    - have fun this evening bot
+- intent: have_no_question
+  examples: |
+    - I don't have any questions right now.
+    - Actually at the moment I don't have any FAFSA questions
+    - Alright! I'll let you know if I need any help
+    - As I formulate questions I'll be in touch
+    - As of now I have no questions but I'll ask if they come up
+    - As of right now I don't have any questions thanks.
+    - Hello and thank you I will kindly ask questions in the future
+    - Hey! Don't need help just yet but if I think of anything I'll let you know
+    - I don't have any at this present time
+    - i dont have any questions
+    - i don't have any questions about enrolling
+    - i don't have any questions at the moment
+    - i don't have any questions at this time and will be sure to reach out to you when i do
+    - I dont have any questions for right now
+    - I don't need anything at this moment
+    - i dont need you to answer anything right now
+    - if I need anything else I'll let you know!
+    - no questions now
+    - no question at this time
+    - Nothing for now.
+    - Okay thank you very much! I really don't have any questions at the moment but when I do I will make sure to ask.
+    - Ok I'll let you know if I have any
+    - text you later!
+    - Thanks guys. I will be using you a lot next semester so be ready!
+    - Thank you I may have questions later
+    - filling out my fafsa when i get home can i hit you up with questions
+    - Thinking about completing my priority tasks later tonight would you be able to answer my questions if i have any
+    - You've answered all my questions but I'll probably have some more later
+    - I'm in class but when I get to my dorm i'll be asking you lots of questions about the fafsa!
+    - Currently in a meeting but as soon as I'm out I need to ask you a few things
+- intent: change_profile
+  examples: |
+    - Can I change my profile info
+    - Can I change my name
+    - Can I change my address
+    - How can I fix mistakes on my profile
+    - Can I make changes to my profile
+    - How do I change information on my profile
+    - how can i make some updates to my profle info
+    - can i change my info on myasu
+    - is there a way to change some things in my profile
+    - how can i change my info in myasu
+    - can i update some things in my asy portal
+- intent: Yay
+  examples: |
+    - Yay!
+    - Whooot whoooot
+    - Woohoo!
+    - Yaaaaaaaay!!
+    - yay thanks!
+    - Yay!!!!
+    - Yayay
+    - yeehaw
+    - hooray
+    - atta boy
+    - woo hoo
+    - awwww yay
+- intent: Why
+  examples: |
+    - Why
+    - why not
+    - why tho
+    - Why though
+    - How come
+    - how come
+- intent: share_data
+  examples: |
+    - Are you sharing any of my information with anyone else
+    - Do you save my data
+    - Do you give away my data
+    - Who do you share my data with
+    - Do you collect location data
+    - Do you collect my data
+    - Do you track my data
+    - Do you sell my data
+    - Is my information being shared
+- intent: joking
+  examples: |
+    - I was just joking!
+    - i am joking
+    - just kidding
+    - i am just kidding
+    - that was a joke
+    - i told a joke
+    - i told the joke
+    - Just playing
+    - No It's a joke.
+    - Don't involve the humans.
+    - Orange you glad I'm back
+    - jk
+    - I am joking
+    - i was joking
+- intent: real_person
+  examples: |
+    - Are you a real person
+    - am I speaking with a person
+    - am i still talking to a computer
+    - am i talking to a computer
+    - am i talking to a real person
+    - are you a human
+    - are you a human being
+    - are you a live person
+    - are you a person
+    - Are you a student
+    - does a human monitor our converstation
+- intent: bad_service
+  examples: |
+    - This is bad service
+    - Chatbot needs some work
+    - how do i get real help you're not useful
+    - I have been chatting for a long time and did not get one good answer
+    - i think you're glitching
+    - It's always a good time to be helpful but you are not helping me right now.
+    - I wish they put someone who is helpful and can guide us through the process.
+    - you are not very helpful
+    - okay you're not helping and I'm worrying right now
+    - Please don't. I'm just gonna go into the admin building and ask a staff member.
+    - You are not being helpful.
+    - This has not been helpful at all
+    - your advice doesn't help
+    - You haven't helped me
+    - you're kind of rude
+    - i am no longer impressed with your service
+    - this has not been a good experience
+    - I'm so frustrated you're not giving me the right answers
+    - That's wrong that's not even what I asked
+    - Can you please answer correctly
+    - This bot needs some work
+    - The AI in this chatbot sucks
+    - What a horrible chatbot you are
+    - You can't even answer my questions
+    - ummm not even what i asked but ok
+- intent: offensive_slang
+  examples:
+  - text: |
+      Reeeeeee
+  - text: |
+      fuck outta here
+  - text: |
+      I would like you to die	Shut the fuck up
+  - text: |
+      Screw you
+  - text: |
+      What the fuck
+  - text: |
+      How about just stfu
+  - text: |
+      You are the most useless AI I've ever seen
+  - text: |
+      So stfu bitch ass
+  - text: |
+      fuck off
+  - text: |
+      F	k you
+  - text: |
+      B	h
+  - text: |
+      fuck
+- intent: advice_for_freshman
+  examples: |
+    - What is your advice for freshman
+    - do you have any advice for new freshmen
+    - Do you have any tips for freshmen
+    - Whats your best advice for freshmen
+    - What is your best advice for new students
+    - advice for freshmen
+    - advice for first year college student who did poorly in high school
+    - tips for freshmen students
+    - what advice do you have for us
+    - can you share some advice to a freshman student
+    - please share your best advice for being successful at ASU
+- intent: not_answer
+  examples: |
+    - that did not answer my question
+    - are you understanding the question
+    - can you please answer my question
+    - could you have that last question reviewed by a real person as well
+    - doesnt help
+    - Do you know what I asked you
+    - Do you understand my question
+    - I actually have no idea what you're talking about now. You lost me
+    - i guess you aren't as advanced as i thought you were
+    - I'm sorry but you don't really answer my questions
+    - My question really isn't getting answered
+    - THAT DOES NOT HELP
+    - That doesn't have the information that I am looking for
+    - that doesn't make sense
+    - What are you talking about
+    - what does that mean
+    - i don't think you understood my question
+    - that doesn't really help my concerns
+    - I'm still unsure if your answer is correct
+    - hmm.. i'm not quite sure that's the right answer
+    - um.. I think this is an outdated answer
+    - your response doesn't quite help
+    - your message doesn't really make sense
+    - I think this answer is incorrect
+- intent: all_set
+  examples: |
+    - I did it!
+    - all set
+    - already did it
+    - Already filled that out boss
+    - Bro chill. I'm just vibin
+    - done!
+    - done my furry friend
+    - Dones
+    - Hello I have already taken care of it.
+    - I've been meaning to fill that out with my dad we plan to fill that out this
+    - i already did it
+    - i already did that queen
+    - that's done king
+    - I already updated thanks
+    - that's been updated
+    - that's been done
+    - all set with that
+    - i am done
+    - I am this Friday
+    - I'll get that done tonight
+    - that will be finished by tomorrow
+    - that's on my to do list for Monday
+    - I'm gonna get that done Tuesday
+    - finna have that done on wednesday
+    - that will be done by thursday
+    - on friday i'll have that completed
+    - gonna have everything turned in after work
+    - I did.
+    - i did it
+    - I figured out my questions never mind
+    - I filled out the form!
+    - completed all the required documents
+    - just sent in all my files
+    - I have everything sent
+    - I haven't I'll get on that ASAP!
+    - I just emailed the form
+    - just send all my requirements via email
+    - I'll do it when I can
+    - i'll do that in a few weeks
+    - I'll make sure to do it ASAP!
+    - it is done
+    - It should be on its way
+    - It should be on the way.
+    - I've paid it
+    - i will do i get home
+    - i'll get that done after class
+    - i've reviewed everything and completed the items
+- intent: hey_bot
+  examples: |
+    - Hey man!
+    - Hey bro
+    - yo chatbot
+    - hi chat bot
+    - hey friend!
+    - hi brotha
+    - hi bro
+    - bruh
+    - bro
+    - hey boo
+    - hi bot
+    - hello brotha
+- intent: tell_me_joke
+  examples: |
+    - Tell me a joke
+    - Tell me another joke haha
+    - can i get a little positivity
+    - Do you have a sense of humor
+    - Wish you told jokes
+    - tell me something funny
+    - I bet you can't make me laugh
+    - bet your jokes aren't good
+    - send me a joke I need a good laugh
+    - I need to lighten up got a joke or something
+    - Make me laugh really hard
+    - tell me a pun
+    - what puns do you tell
+    - do you tell puns
+    - joke
+    - do you know any jokes
+    - know any good jokes
+    - tell me a joke
+    - Can I get another awesome joke
+    - what's the best joke someone has asked you
+    - what's the joke of the day
+    - share a joke with me pleaseee
+    - send me your fave pun
+    - what's you're favorite pun
+    - what is the pun that makes you laugh the most
+    - what joke makes you crack up all the time
+- intent: you_smart
+  examples: |
+    - You are so smart!
+    - You reply so fast
+    - you are a smart robot
+    - You're a genius
+    - You're smart
+    - You're brilliant
+    - you are so smart
+    - You are intelligent
+    - Great minds think alike!
+    - Woah you're a smart bot
+    - this is a pretty sophisticated service
+    - u r smart
+    - You're so smart
+    - you're pretty smart no cap
+    - How did you do that so fast
+    - Wow for a bot your really advanced
+    - Your the smartest bot I've ever talked to
+    - You're a smartie pants
+    - You are very smart for artificial intelligence
+- intent: make_food
+  examples: |
+    - Can you please make me food
+    - Feed me
+    - Make me a sandwich
+    - Will you make me a sandwich
+    - Will you make me breakfast
+    - Will you make me dinner
+    - Will you make me lunch
+    - may you please make me something to eat
+    - can you cook
+    - do you know how to bake
+    - Do you have cooking skills
+    - May you make me something good to eat
+    - I'm hungry make me some lunch
+- intent: Huh
+  examples: |
+    - Huh
+    - huh
+    - ????
+    - robo say wuuut
+    - whayuut
+    - confused
+    - ummm what?
+    - wut?
+    - huuuuh
+    - wdym?
+    - huh??
+    - what?
+    - i don't get it
+    - you confuse me
+- intent: you_talk_alot
+  examples: |
+    - Do you get asked a lot of questions
+    - do you talk to a lot of people
+    - do you get asked a lot of questions
+    - how many other people are you talking to right now
+    - are you helping other students now too
+    - do you get asked a lot of qs
+    - how many people have you helped today
+    - i bet you get asked lots of questions huh
+    - do you get really busy throughout the day
+    - what do you do all day
+    - are students asking you questions all the time
+- intent: great_job_designers
+  examples: |
+    - Tell your designers great job!
+    - kudos to your desingers
+    - thank you bot for your designers
+    - great job to your designers
+    - tell your designers thank you for me
+    - wow your designers did a great job
+    - your designers are so awesome
+    - you're such a well programmed bot
+    - I am impressed with your ability to answer my questions
+    - You are a very well developed chat bot
+    - please thank your designers for me I love using this!
+    - Can you thank your creators for me!
+    - This is a helpful tool
+    - Whoever made you did such an amazing job
+    - Those that created you did fantastic work
+- intent: hello_hey
+  examples: |
+    - Hello!
+    - Hi
+    - Hey
+    - Hello bot
+    - Hi chat bot
+    - hi there
+    - hellooooo
+    - heyyyyy
+    - heeeey
+    - hey friend
+    - hi pal
+    - hiiii
+    - hello :)
+    - hello there ;)
+    - why hello
+    - hi my dude
+    - hello my dear friend
+    - hi buddy
+    - hey robo friend
+    - Hello my fave bot
+    - Hi favorite person
+    - hello hello
+    - hey hey hey
+    - hi cutie
+- intent: call_me
+  examples: |
+    - Can you call me
+    - Are you able to call me
+    - can i call you
+    - Could I call you
+    - please give me a call at this number
+    - is there a number i can call you at
+    - would i be able to just call you
+    - could you hop on the phone for a call
+    - would we be able to just talk on the phone
+    - can you please just call me
+    - this is hard to message over please call me
+- intent: fun_fact_ASU
+  examples: |
+    - Tell me a fun fact about ASU
+    - can you tell me some fun facts about ASU
+    - do you know facts about ASU
+    - tell me a fact about ASU
+    - tell me a fun fact of ASU
+    - Tell me another ASU fun fact
+    - what are some cool things about ASU
+    - what are some facts about ASU
+    - what are some quick facts about ASU
+    - share an ASU fun fact
+    - tell me something about ASU i don't know
+    - please share something interesting about ASU
+    - can you tell me something interesting about the school
+    - what is a fun fact about ASU
+    - i'm curious to learn something new about ASU
+    - tell me something about the college that i don't know
+    - share some ASU history with me!
+- intent: lie_to_me
+  examples: |
+    - Why was what you told me not true
+    - why did you lie to me
+    - Bro quit being sarcastic.
+    - Is that sarcasm
+    - i sense some sarcasm
+    - you lied to me
+    - why did you lie
+    - what you told me was false
+    - what you said was inaccurate
+    - you told me something completely incorrect
+    - what you responded is so untrue
+- intent: test_question
+  examples: |
+    - I am just testing this
+    - i am testing questions
+    - I was just testing the chatbot
+    - testing testing
+    - I am going to test you by asking hard questions
+    - are you ready for a test
+    - I will ask you hard questions lets see if you pass
+    - I am going to ask you some test questions
+    - I want to see how well you respond
+    - I want to test you to see if you know how to answer questions
+    - I'm gonna test you with some questions
+- intent: what_up
+  examples: |
+    - What's up!
+    - alright. how you been bruh
+    - alright what up
+    - Any plans
+    - Awesome how's it hanging
+    - Ayeee what's up
+    - Doing anything special today
+    - Doing good thanks. Hbu
+    - what is up
+    - Hey bro what's good
+    - Hi! What's up
+    - How are you all
+    - So what you been up to
+    - sup
+    - Sup dog
+    - Sup there bot
+    - Was up
+    - Waddup
+    - wazzup
+    - whassup
+    - wassup baby
+    - Whatcha upto
+    - whatcha doin
+    - What are doing
+    - wassup
+    - what have u been up to
+    - how are you doing
+- intent: leave_ASU
+  examples: |
+    - I want to leave ASU
+    - leave ASU
+    - transfer schools
+    - drop out
+    - withdraw
+    - I want to transfer to another school
+    - thinking of dropping out
+    - process for withdrawing
+- intent: accept_into_ASU
+  examples: |
+    - Can you please accept me into ASU
+    - can you accept me
+    - please tell your humans to accept me to law school
+    - can you tell them to accept me
+    - You should accept me into your school
+    - Pull some strings for me pls
+    - will you accept me into your university
+    - accept me in to the engineering program please
+    - can you make it happen so i get accepted to ASU
+    - tell the asu folks to accept me please
+    - can you do me a huge favor and accept me at ASU
+- intent: ASU_bot
+  examples: |
+    - who are you
+    - what's your name
+    - how to call you
+    - can you introduce yourself
+    - your name?
