@@ -3,7 +3,6 @@ nlu:
 - intent: greet
   examples: |
     - hey
-    - hello
     - hi
     - hello there
     - good morning
@@ -15,6 +14,33 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+- intent: hello_hey
+  examples: |
+    - hello
+    - Hello!
+    - Hi
+    - Hey
+    - Hello bot
+    - Hi chat bot
+    - hi there
+    - hellooooo
+    - heyyyyy
+    - heeeey
+    - hey friend
+    - hi pal
+    - hiiii
+    - hello :)
+    - hello there ;)
+    - why hello
+    - hi my dude
+    - hello my dear friend
+    - hi buddy
+    - hey robo friend
+    - Hello my fave bot
+    - Hi favorite person
+    - hello hello
+    - hey hey hey
+    - hi cutie
 - intent: goodbye
   examples: |
     - good afternoon
@@ -1276,32 +1302,6 @@ nlu:
     - This is a helpful tool
     - Whoever made you did such an amazing job
     - Those that created you did fantastic work
-- intent: hello_hey
-  examples: |
-    - Hello!
-    - Hi
-    - Hey
-    - Hello bot
-    - Hi chat bot
-    - hi there
-    - hellooooo
-    - heyyyyy
-    - heeeey
-    - hey friend
-    - hi pal
-    - hiiii
-    - hello :)
-    - hello there ;)
-    - why hello
-    - hi my dude
-    - hello my dear friend
-    - hi buddy
-    - hey robo friend
-    - Hello my fave bot
-    - Hi favorite person
-    - hello hello
-    - hey hey hey
-    - hi cutie
 - intent: call_me
   examples: |
     - Can you call me
